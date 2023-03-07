@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shantell+Sans:ital,wght@1,600&family=Tilt+Warp&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #7474BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-main {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Warp', cursive;
+    color: white;
+}
+
+.hero-intro {
+    display: block;
+
+}
+
+.hero-intro h1 {
+    font-size: 72px;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    margin-top: calc(15px + 1.5625vw);
+
+}
+
+.hero-intro p {
+    display: flex;
+    justify-content: center;
+    padding: calc(5px + 1.5625vw);
+    font-size: 25px;
+
+
+}
+
+.game-main {
+    display: block;
+}
+
+.show-score {
+    display: block;
+
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.show {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.play-game {
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.choice {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Warp', cursive;
+    color: white;
+    padding: 45px;
+    margin: 20px;
+    border: 5px solid white;
+    border-radius: 25px;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+
+.choice span {
+    /* fallback for old browsers */
+    background: #7474BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.message-result {
+    display: flex;
+    justify-content: center;
+}
+
