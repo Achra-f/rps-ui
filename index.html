@@ -5,45 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <lsink rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <div class="hero-main">
-        <div class="hero-intro">
-            <h1>Rock, Paper, Scissors</h1>
-            <p>First one to get to 5 points wins the game!</p>
+    <div class="game">
+        <h1>Rock Paper Scissors</h1>
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="playerCount">0</p>
+            </div>
+
+            <h2>Computer</h2>
+            <p class="computerCount">0</p>
         </div>
 
-        <div class="game-main">
-            <div class="show-score">
-                <div class="score">Score</div>
-                <div class="show">
-                    <div id="score-player">Player: </div>
-                    <div id="score-computer">Computer: </div>
-                </div>
-            </div>
-            <div class="play-game">
-                <div id="choices">
-                    <button id="rock" class="choice"><span>Rock</span></button>
-                    <button id="paper" class="choice"><span>Paper</span></button>
-                    <button id="scissors" class="choice"><span>Scissors</span></button>
-                </div>
-            </div>
-
-            <div class="message-result">
-                <p>Play the Game</p>
-            </div>
-
+        <div class="options">
+            <button id="options">Rock</button>
+            <button id="options">Paper</button>
+            <button id="options">Scissors</button>
         </div>
+
+        <div class="result"></div>
+        <div class="reset"></div>
+
     </div>
-
-
-
-
-
+  
 </body>
 
 </html>
