@@ -1,12 +1,8 @@
 //store options
 const options = document.querySelectorAll('#options');
 
-
 let playerScore = 0;
 let computerScore = 0;
-
-
-
 
 options.forEach((option) => {
   option.addEventListener("click", function () {
@@ -23,8 +19,6 @@ options.forEach((option) => {
     button.classList.add('reset-button');
     button.textContent = 'Play Again';
 
-
-
     if (computerScore == 5) {
       options.style.display = 'none';
       result.textContent = 'Game Over, You Lost.';
@@ -32,8 +26,6 @@ options.forEach((option) => {
       button.addEventListener('click', () => {
         window.location.reload();
       })
-
-
     }
     else if (playerScore == 5) {
       options.style.display = 'none';
@@ -42,14 +34,9 @@ options.forEach((option) => {
       button.addEventListener('click', () => {
         window.location.reload();
       })
-
-
-
     }
   })
 })
-
-
 
 
 function playRound(playerInput, computerInput) {
@@ -61,13 +48,11 @@ function playRound(playerInput, computerInput) {
   //result var
   const currentMatch = `${playerInput} VS ${computerInput}`;
 
-
   // Tie check
   if (playerInput === computerInput) {
     result.textContent = `${currentMatch}: is a Tie.`;
     return;
   }
-
   // Rock
   if (playerInput === "Rock") {
     if (computerInput === "Scissors") {
@@ -105,5 +90,4 @@ function playRound(playerInput, computerInput) {
       computerCount.textContent = computerScore;
     }
   }
-
 }
